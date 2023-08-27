@@ -5,10 +5,10 @@ document.getElementById('url').addEventListener('keyup', function(){
 
   if(url==""){
     document.getElementById('lottie').style.display = "block";
-
+    card.style = "none";
   }else{
     document.getElementById('lottie').style.display = "none";
-
+    card.style= "block";
   }
 
   const link = 'https://api.aladhan.com/v1/calendarByAddress/2023/'+url+'?address=Dhaka%20bangladesh&method=2'
